@@ -1,0 +1,32 @@
+{
+  "name": "restaurante-triton",
+  "version": "1.0.0",
+  "description": "Sitio web desarrollado para el Restaurante Triton en 2011",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/porfidev/restaurante-triton.git"
+  },
+  "keywords": [
+    "web",
+    "site",
+    "plain",
+    "static",
+    "desarrollo",
+    "programacion"
+  ],
+  "author": "Porfirio Chávez <hola@porfi.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/porfidev/restaurante-triton/issues"
+  },
+  "homepage": "https://github.com/porfidev/restaurante-triton#readme",
+  "devDependencies": {
+    "http-server": "^14.1.0",
+    "prettier": "^2.6.2"
+  }
+}
