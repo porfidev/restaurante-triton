@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  <title>Restaurante Tritón | porfi.dev site</title>
+  <link href='../styles/estilos.css' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+<div id='central_principal'>
+  <div id='logo'><img height='341' src='../imagenes/logo.png' width='343' /></div>
+  <div id='contenido_contacto'>
+    <div id='contacto_form'>
+      <form action='_contactanos.php' method='post' name='contacto_form'>
+        <table border='0' width='100%'>
+          <tr>
+            <td width='54%'>
+              <input border='0' class='inserta_texto' id='nombre' name='nombre' type='text' />
+              <label>
+                <input class='inserta_texto' id='email' name='email' type='text' />
+              </label>
+              <label>
+                <input class='inserta_texto' id='telefono' name='telefono' type='text' />
+              </label>
+              <label>
+                <textarea class='inserta_comentario' cols='45' id='textarea' name='comentarios'>Comentarios: </textarea>
+              </label>
+            </td>
+            <td width='46%'><label>
+              <input class='enviar_comentario' id='button' name='button' type='submit' value='Enviar' />
+            </label></td>
+          </tr>
+        </table>
+        <input name='envio' type='hidden' value='99' />
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
