@@ -10,33 +10,52 @@
 <body>
 <div class='container'>
   <div id='central_principal'>
-    <div id='logo'><img height='341' src='../imagenes/logo.png' width='343' alt='logo'/></div>
+    <div id='logo'><img height='341' src='../imagenes/logo.png' width='343' alt='logo' /></div>
     <div id='contenido_contacto'>
       <div id='contacto_form'>
         <form action='' name='contacto_form' id='contact-form'>
           <table border='0' width='100%'>
             <tr>
-              <td width='54%'>
+              <td class='input'>
                 <label>
-                  <input class='inserta_texto' id='nombre' name='nombre' type='text' />
+                  Nombre:
                 </label>
+                <input class='inserta_texto' id='nombre' name='nombre' type='text' />
+
+              </td>
+            </tr>
+            <tr>
+              <td class='input'>
                 <label>
-                  <input class='inserta_texto' id='email' name='email' type='text' />
+                  e-mail:
                 </label>
+                <input class='inserta_texto' id='email' name='email' type='text' />
+              </td>
+            </tr>
+            <tr>
+              <td class='input'>
                 <label>
-                  <input class='inserta_texto' id='telefono' name='telefono' type='text' />
+                  Teléfono:
                 </label>
+                <input class='inserta_texto' id='telefono' name='telefono' type='text' />
+
+              </td>
+            </tr>
+            <tr>
+              <td class='input'>
                 <label>
+                  Comentarios:
                   <textarea class='inserta_comentario' cols='45' id='textarea' rows='4'
-                            name='comentarios'>Comentarios: </textarea>
+                            name='comentarios'></textarea>
                 </label>
               </td>
-              <td width='46%'><label>
-                <input class='enviar_comentario' id='button' name='button' type='submit' value='Enviar' />
-              </label></td>
+            </tr>
+            <tr>
+              <td>
+                <button type='submit'>Enviar</button>
+              </td>
             </tr>
           </table>
-          <input name='envio' type='hidden' value='99' />
         </form>
       </div>
     </div>
@@ -48,21 +67,23 @@
 
 <script type='text/javascript'>
   function ready(fn) {
-    if (document.readyState !== 'loading'){
+    if (document.readyState !== 'loading') {
       fn();
     } else {
       document.addEventListener('DOMContentLoaded', fn);
     }
   }
 
-  function init(){
+  function init() {
     const form = document.getElementById('contact-form');
 
-    form.addEventListener('submit', function(event){
+    form.addEventListener('submit', function(event) {
       event.preventDefault();
       alert('Gracias por enviar tus comentarios');
-    })
+      form.reset();
+    });
   }
+
   ready(init);
 </script>
 </body>
