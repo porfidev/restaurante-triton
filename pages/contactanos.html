@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns='http://www.w3.org/1999/xhtml'>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='es'>
 <head>
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   <title>Restaurante Tritón | porfi.dev site</title>
@@ -10,14 +10,16 @@
 <body>
 <div class='container'>
   <div id='central_principal'>
-    <div id='logo'><img height='341' src='../imagenes/logo.png' width='343' /></div>
+    <div id='logo'><img height='341' src='../imagenes/logo.png' width='343' alt='logo'/></div>
     <div id='contenido_contacto'>
       <div id='contacto_form'>
-        <form action='_contactanos.php' method='post' name='contacto_form'>
+        <form action='' name='contacto_form' id='contact-form'>
           <table border='0' width='100%'>
             <tr>
               <td width='54%'>
-                <input border='0' class='inserta_texto' id='nombre' name='nombre' type='text' />
+                <label>
+                  <input class='inserta_texto' id='nombre' name='nombre' type='text' />
+                </label>
                 <label>
                   <input class='inserta_texto' id='email' name='email' type='text' />
                 </label>
@@ -25,7 +27,7 @@
                   <input class='inserta_texto' id='telefono' name='telefono' type='text' />
                 </label>
                 <label>
-                  <textarea class='inserta_comentario' cols='45' id='textarea'
+                  <textarea class='inserta_comentario' cols='45' id='textarea' rows='4'
                             name='comentarios'>Comentarios: </textarea>
                 </label>
               </td>
@@ -43,5 +45,25 @@
     <span>Desarrollado por <a href='https://porfi.dev'>porfi.dev</a></span>
   </div>
 </div>
+
+<script type='text/javascript'>
+  function ready(fn) {
+    if (document.readyState !== 'loading'){
+      fn();
+    } else {
+      document.addEventListener('DOMContentLoaded', fn);
+    }
+  }
+
+  function init(){
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function(event){
+      event.preventDefault();
+      alert('Gracias por enviar tus comentarios');
+    })
+  }
+  ready(init);
+</script>
 </body>
 </html>
