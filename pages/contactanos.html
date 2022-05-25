@@ -8,33 +8,39 @@
 </head>
 
 <body>
-<div id='central_principal'>
-  <div id='logo'><img height='341' src='../imagenes/logo.png' width='343' /></div>
-  <div id='contenido_contacto'>
-    <div id='contacto_form'>
-      <form action='_contactanos.php' method='post' name='contacto_form'>
-        <table border='0' width='100%'>
-          <tr>
-            <td width='54%'>
-              <input border='0' class='inserta_texto' id='nombre' name='nombre' type='text' />
-              <label>
-                <input class='inserta_texto' id='email' name='email' type='text' />
-              </label>
-              <label>
-                <input class='inserta_texto' id='telefono' name='telefono' type='text' />
-              </label>
-              <label>
-                <textarea class='inserta_comentario' cols='45' id='textarea' name='comentarios'>Comentarios: </textarea>
-              </label>
-            </td>
-            <td width='46%'><label>
-              <input class='enviar_comentario' id='button' name='button' type='submit' value='Enviar' />
-            </label></td>
-          </tr>
-        </table>
-        <input name='envio' type='hidden' value='99' />
-      </form>
+<div class='container'>
+  <div id='central_principal'>
+    <div id='logo'><img height='341' src='../imagenes/logo.png' width='343' /></div>
+    <div id='contenido_contacto'>
+      <div id='contacto_form'>
+        <form action='_contactanos.php' method='post' name='contacto_form'>
+          <table border='0' width='100%'>
+            <tr>
+              <td width='54%'>
+                <input border='0' class='inserta_texto' id='nombre' name='nombre' type='text' />
+                <label>
+                  <input class='inserta_texto' id='email' name='email' type='text' />
+                </label>
+                <label>
+                  <input class='inserta_texto' id='telefono' name='telefono' type='text' />
+                </label>
+                <label>
+                  <textarea class='inserta_comentario' cols='45' id='textarea'
+                            name='comentarios'>Comentarios: </textarea>
+                </label>
+              </td>
+              <td width='46%'><label>
+                <input class='enviar_comentario' id='button' name='button' type='submit' value='Enviar' />
+              </label></td>
+            </tr>
+          </table>
+          <input name='envio' type='hidden' value='99' />
+        </form>
+      </div>
     </div>
+  </div>
+  <div class='footer'>
+    <span>Desarrollado por <a href='https://porfi.dev'>porfi.dev</a></span>
   </div>
 </div>
 </body>

@@ -1,20 +1,34 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#central_principal {
-  position: relative;
-  z-index: 0;
-  width: 1024px;
-  height: 768px;
-  margin: 0 auto;
-  text-align: left;
+body {
+  background-image: url(../imagenes/fondo_principal.jpg);
   background-repeat: repeat;
 }
 
-body {
-  text-align: center;
-  background-image: url(../imagenes/fondo_principal.jpg);
-  background-repeat: repeat;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.footer {
+  font-family: Verdana, sans-serif;
+  color: #422a1d;
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+}
+
+.footer a {
+  font-weight: bold;
+}
+
+#central_principal {
+  position: relative;
+  width: 1024px;
+  height: 768px;
 }
 
 #logo_principal,
